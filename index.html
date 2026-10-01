@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Espresso Yourself</title>
+
+    <link rel="stylesheet" href="https://pyscript.net/releases/2026.3.1/core.css">
+    <script type="module" src="https://pyscript.net/releases/2026.3.1/core.js"></script>
+</head>
+
+<body style="margin: 0; background-color: #e8dcc8; font-family: Georgia;">
+
+    <div style="background-color: #6f4e37; color: white; padding: 15px;">
+        Espresso Yourself ☕
+
+        <span style="float: right;">
+            <a href="index.html" style="color: white;">Receipt</a>
+            &nbsp; | &nbsp;
+            <a href="sku.html" style="color: white;">SKU Generator</a>
+        </span>
+    </div>
+
+    <div style="width: 400px; margin: 35px auto; background-color: #fffaf0; padding: 25px;">
+
+        <h1 style="text-align: center; color: #5b4033; font-weight: normal;">
+            Espresso Yourself ☕
+        </h1>
+
+        <p style="text-align: center; color: #6f4e37;">
+            Receipt Generator
+        </p>
+
+        <h3 style="color: #5b4033; font-weight: normal;">Menu</h3>
+
+        <p style="background-color: #f1e7d5; padding: 10px;">
+            <input type="checkbox" id="item1" value="120">
+            Matcha Latte
+            <span style="float: right;">₱120</span>
+        </p>
+
+        <p style="background-color: #f1e7d5; padding: 10px;">
+            <input type="checkbox" id="item2" value="100">
+            Hot Chocolate
+            <span style="float: right;">₱100</span>
+        </p>
+
+        <p style="background-color: #f1e7d5; padding: 10px;">
+            <input type="checkbox" id="item3" value="150">
+            Cold Brew
+            <span style="float: right;">₱150</span>
+        </p>
+
+        <p style="background-color: #f1e7d5; padding: 10px;">
+            <input type="checkbox" id="item4" value="150">
+            Affogato
+            <span style="float: right;">₱150</span>
+        </p>
+
+        <p style="background-color: #f1e7d5; padding: 10px;">
+            <input type="checkbox" id="item5" value="135">
+            Americano
+            <span style="float: right;">₱135</span>
+        </p>
+
+        <button id="order_button" class="btn-order" py-click="create_order" type="button"
+            style="width: 100%; padding: 10px; background-color: #6f4e37; color: white; border: none; font-family: Georgia;">
+            Create Order
+        </button>
+
+        <h3 style="color: #5b4033; font-weight: normal;">Receipt</h3>
+
+        <div id="create_order">
+            Your order will appear here.
+        </div>
+
+    </div>
+
+    <script type="py" src="main.py"></script>
+
+</body>
+
+</html>
